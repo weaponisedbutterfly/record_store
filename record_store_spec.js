@@ -1,4 +1,5 @@
 var Record = require('./record');
+var Store = require('./store');
 var assert = require('assert');
 
 describe('Record', function(){
@@ -9,5 +10,10 @@ describe('Record', function(){
     assert.equal(12.99, twentyFive.price);
   });
 
+});
 
+describe('Store', function(){
+  it('A store should have a name', function(){ bigTunes = new Store("Big Tunes", "Aberdeen", 1500);
+    assert.equal("Big Tunes", bigTunes.name); 
+  })
 });
