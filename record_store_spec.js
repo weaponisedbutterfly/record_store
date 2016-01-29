@@ -15,5 +15,11 @@ describe('Record', function(){
 describe('Store', function(){
   it('A store should have a name', function(){ bigTunes = new Store("Big Tunes", "Aberdeen", 1500);
     assert.equal("Big Tunes", bigTunes.name); 
-  })
+  });
+
+  it('A store should have money in the bank', function(){ bigTunes = new Store("Big Tunes", "Aberdeen", 1500);
+    assert.equal(1500, bigTunes.balance); 
+  });
+
+
 });
